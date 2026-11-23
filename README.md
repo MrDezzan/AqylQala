@@ -1,8 +1,18 @@
-# AqylQala — Digital Sovereignty Platform for Almaty
+<h1 align="center">AqylQala</h1>
+<p align="center"><b>Digital sovereignty platform for Almaty.</b><br>An intelligent city management ecosystem powered by a local, self-hosted AI model.</p>
 
-### Intelligent city management ecosystem powered by a local AI model
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white" alt="Prisma">
+  <img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/Ollama-local%20AI-000000?style=flat-square" alt="Ollama">
+</p>
 
-**Live Demo:** https://canva.link/7tadsufvum8infk
+<p align="center"><a href="https://canva.link/7tadsufvum8infk">Project presentation</a></p>
+
+---
 
 AqylQala is a Gov-Tech platform that acts as a bridge between Almaty residents and the city administration. It addresses the challenge of responding to urban issues efficiently, using a **fully local, self-hosted AI model** to analyze reports, validate submissions, and support administrative decision-making.
 
@@ -54,6 +64,19 @@ Unlike solutions built on external APIs (OpenAI, Google), AqylQala runs a **loca
 - **API design**: RESTful CRUD across all resources with standard HTTP methods.
 
 ---
+
+## Project structure
+
+```
+backend/
+  src/routes/      auth, problems, ai, environmental, news, logs, users
+  src/services/    AI validation, DOCX/XLSX report generation
+  src/middleware/  JWT and role checks
+  prisma/          schema and seed data
+frontend/
+  src/             React app: map, citizen reports, admin dashboard
+docker-compose.yml PostgreSQL and Redis for local development
+```
 
 ## Getting Started
 

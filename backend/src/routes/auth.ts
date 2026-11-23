@@ -6,7 +6,7 @@ import { authMiddleware, AuthRequest } from '../middleware/auth';
 import { logAction } from '../lib/logger';
 
 const router = Router();
-const JWT_SECRET = process.env.JWT_SECRET || 'REMOVED';
+const JWT_SECRET = process.env.JWT_SECRET || 'dev-only-change-me';
 
 // Список ИИН госслужащих для проверки при регистрации (Mock база)
 const MOCK_OFFICIALS: Record<string, { name: string; role: string; department: string }> = {

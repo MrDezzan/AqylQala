@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     environment:
       POSTGRES_USER: aqylqala
-      POSTGRES_PASSWORD: REMOVED
+      POSTGRES_PASSWORD: change-me
       POSTGRES_DB: aqylqala
     ports:
       - "5432:5432"
