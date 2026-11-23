@@ -57,10 +57,27 @@ Unlike solutions built on external APIs (OpenAI, Google), AqylQala runs a **loca
 
 ## Getting Started
 
+You need Node.js 16+, Docker (for PostgreSQL and Redis) and [Ollama](https://ollama.com) for the local model.
+
+```bash
+# PostgreSQL and Redis
+docker compose up -d
+```
+
 ### Backend
 ```bash
 cd backend
+cp .env.example .env      # set DATABASE_URL, JWT_SECRET, OLLAMA_URL
 npm install
 npm run db:push
 npm run seed
 npm run dev
+```
+
+### Frontend
+```bash
+cd frontend
+cp .env.example .env      # set VITE_API_URL and your TomTom API key
+npm install
+npm run dev
+```
